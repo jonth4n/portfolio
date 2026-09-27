@@ -1,0 +1,216 @@
+@font-face {
+    font-family: AkiraExpanded-SuperBold;
+    src: url('assets/fonts/Akira Expanded Demo.otf') format('opentype');
+}
+@font-face {
+    font-family: fredoka;
+    src: url('assets/fonts/FredokaOne-Regular.ttf') format('truetype');
+}html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #bfbfbf;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+header {
+    background-color: #e6e6e6;
+    color: #000000;
+    padding: 7px;
+    text-align: center;
+}
+header h2 {
+    font-size: 25px;
+    margin: 0;
+    font-family: AkiraExpanded-SuperBold;
+    color: #000000;
+}
+.topo {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.cardtexto {
+    background-color:#d9d9d9;
+    box-shadow: 0 30px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 60px;
+}
+.cardtexto h1 {
+    font-size: 65px;
+    margin-top: -15px;
+    font-family: AkiraExpanded-SuperBold;
+    color: #ffffff;
+    -webkit-text-stroke: 3px #000000;
+}
+.topo img {
+    width: 400px;
+    height: 350px;
+    border-radius: 15%;
+    box-shadow: 0 30px 8px rgba(0, 0, 0, 0.2);
+    border: 7px solid #000000;
+}
+.cardtexto p {
+    font-size: 25px;
+    margin-top: -15px;
+    font-family: fredoka;
+    color: #000000;
+}
+.barra {
+    background-color: #8b8b8b;
+}
+.barra h3 {
+    font-family: fredoka;
+    color: #ffffff;
+    -webkit-text-stroke: 0.5px #000000;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: -10px;
+}
+.barra p {
+    font-family: AkiraExpanded-SuperBold;
+    color: #000000;
+    font-size: 15px;
+    text-align: center;
+}
+.projects h2 {
+    font-family: fredoka;
+    color: #ffffff;
+    -webkit-text-stroke: 0.5px #000000;
+    font-size: 45px;
+    text-align: center;
+}
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 40px;
+}
+a {
+    text-decoration: none;
+}
+.card {
+    background-color: #d9d9d9;
+    box-shadow: 0 30px 8px rgba(0, 0, 0, 0.526);
+    border-radius: 40px;
+    padding: 10px;
+    text-align: center;
+    margin: 20px;
+    gap: 200px;
+    font-size: 20px;
+}
+.card img {
+    width: 430px;
+    height: 250px;
+    border-radius: 10px;
+}
+#card2 {
+    background-color: #d9d9d9;
+    border-radius: 40px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.card p {
+    font-family: fredoka;
+    color: #000000;
+    font-size: 20px;
+    max-width: 350%;
+}
+.card h3 {
+    font-family: AkiraExpanded-SuperBold;
+    color: #000000;
+    font-size: 25px;
+}
+#card2 img {
+    width: 430px;
+    height: 250px;
+    border-radius: 10px;
+}
+#card1 {
+    padding: 20px;
+}
+#card2 {
+    padding: 20px;
+}
+#card3 {
+    padding: 20px;
+}
+.card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.4s ease-in-out;
+}
+.contact {
+    background-color: #bfbfbf;
+    padding: 20px;
+    text-align: center;
+}
+.contact h2 {
+    font-family: fredoka;
+    color: #ffffff;
+    -webkit-text-stroke: 2px #000000;
+    font-size: 50px;
+    text-align: center;
+    
+}
+.lista {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: -55px;
+    list-style-type: none;
+    font-family: fredoka;
+    align-self: flex-start;
+}
+.lista li {
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+}
+.contact p {
+    font-family: fredoka;
+    color: #000000;
+    text-align: center;
+    justify-content: flex-end;
+    display: flex;
+    margin-bottom: -25px;
+    font-size: 30px;
+}
+.contato {
+    background-color: #d9d9d9;
+    border-radius: 30px;
+    box-shadow: 0 30px 8px rgba(0, 0, 0, 0.416);
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    margin: 150px;
+    gap: 10px;
+}
+.redes {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 5px;
+    text-decoration: none;
+    color: #e6e6e6;
+    font-family: fredoka;
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    margin-left: 750px;
+}
+#github {
+    background-color: midnightblue;
+}
+#youtube {
+    background-color: brown;
+}
+#behance {
+    background-color: blue;
+}
+.botao {
+    margin-top: -150px;
+}
