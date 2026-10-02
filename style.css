@@ -214,3 +214,164 @@ a {
 .botao {
     margin-top: -150px;
 }
+
+/* =========================================================
+   RESPONSIVIDADE
+   Tudo abaixo só vale em telas menores. Acima de 1600px o
+   layout original continua exatamente igual.
+   ========================================================= */
+
+/* Até 1600px: os 3 cards deixam de ter largura fixa e dividem a linha */
+@media (max-width: 1600px) {
+    .cards a {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+    .card img,
+    #card2 img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 43 / 25;
+    }
+}
+
+/* Contato (todas as larguras): lista à esquerda; texto e botões empilhados e
+   centralizados na coluna da direita, em vez de depender de margens fixas/negativas */
+.contato {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: start;
+    gap: 20px 40px;
+}
+.contact p {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+    justify-content: center;
+}
+.lista {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    margin: 0;
+}
+.botao {
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 0;
+}
+.redes {
+    margin: 5px auto;
+}
+
+/* Até 1480px: card do contato com margens menores */
+@media (max-width: 1480px) {
+    .contato {
+        margin: 60px 40px;
+        padding: 60px;
+    }
+}
+
+/* Até 1120px (tablet): tudo empilhado em uma coluna */
+@media (max-width: 1120px) {
+    .topo {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .cards a {
+        flex: none;
+        width: 100%;
+        max-width: 560px;
+    }
+    .contato {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin: 40px 24px;
+        padding: 40px;
+    }
+    .contact p,
+    .lista,
+    .botao {
+        grid-column: 1;
+        grid-row: auto;
+    }
+    .lista {
+        padding-left: 0;
+    }
+}
+
+/* Até 600px (celular): tamanhos de fonte e espaçamentos menores */
+@media (max-width: 600px) {
+    header h2 {
+        font-size: 20px;
+    }
+    .topo {
+        padding: 16px;
+        gap: 24px;
+    }
+    .cardtexto {
+        padding: 24px;
+    }
+    .cardtexto h1 {
+        font-size: clamp(26px, 10vw, 65px);
+        -webkit-text-stroke: 2px #000000;
+    }
+    .cardtexto p {
+        font-size: 18px;
+    }
+    .topo img {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        aspect-ratio: 8 / 7;
+    }
+    .barra h3 {
+        font-size: 20px;
+    }
+    .barra p {
+        font-size: 12px;
+        padding: 0 16px;
+    }
+    .projects h2 {
+        font-size: 30px;
+        padding: 0 16px;
+    }
+    .cards {
+        padding: 12px 16px;
+    }
+    .card {
+        margin: 10px 0;
+    }
+    .card h3 {
+        font-size: 20px;
+    }
+    .card p {
+        font-size: 17px;
+    }
+    .contact {
+        padding: 20px 16px;
+    }
+    .contact h2 {
+        font-size: 30px;
+        -webkit-text-stroke: 1px #000000;
+    }
+    .contato {
+        margin: 24px 0;
+        padding: 28px 20px;
+        border-radius: 24px;
+    }
+    .contact p,
+    .lista li {
+        font-size: 22px;
+    }
+    .redes {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 250px;
+    }
+}
